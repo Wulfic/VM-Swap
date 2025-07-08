@@ -15,11 +15,12 @@ if [[ "$event" != "post-stop" ]]; then
   exit 0
 fi
 
+
 # Map the just-stopped VM to its standby partner
-if [[ "$vmid" == "100" ]]; then
-  target="101"
-elif [[ "$vmid" == "101" ]]; then
-  target="100"
+if [[ "$vmid" == "100" ]]; then #Edit this VMID
+  target="101" #Edit this VMID
+elif [[ "$vmid" == "101" ]]; then #Edit this VMID
+  target="100" #Edit this VMID
 else
   exit 0
 fi
