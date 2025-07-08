@@ -2,7 +2,9 @@
 #
 # windows-swapper.sh
 # Called by Proxmox on VM lifecycle events.
-#
+# chmod +x windows-swapper.sh
+# attach this as a hook-script to the VMIDs you want to alternate between.
+# This will make it so when you shut down specified VM1 then specific VM2 starts and vice versa.
 # Args:
 #   $1 = VMID
 #   $2 = Event name (pre-start, post-stop, etc.)
